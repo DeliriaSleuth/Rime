@@ -2,22 +2,16 @@ customization:
   distribution_code_name: Weasel
   distribution_version: 0.13.0
   generator: "Rime::SwitcherSettings"
-  modified_time: "Sun Jun  2 19:14:51 2019"
+  modified_time: "Mon Jun  3 09:39:21 2019"
   rime_version: 1.4.0
 patch:
-  menu/page_size: 9
-  # ascii_composer/good_old_caps_lock: true
-  # ascii_composer/switch_key:
-  #  Caps_Lock: noop
-  #  Shift_L: commit_code
-  #  Shift_R: inline_ascii
-  #  Control_L: clear
-  #  Control_R: commit_text
-  ascii_composer/switch_key:
+  "ascii_composer/switch_key":
     Caps_Lock: commit_code
-    Shift_L: commit_code
-    Shift_R: inline_ascii
     Control_L: clear
     Control_R: commit_code
+    Shift_L: commit_code
+    Shift_R: inline_ascii
+  "menu/page_size": 9
   schema_list:
     - {schema: wubi86}
+    - {schema: wubi_trad}
